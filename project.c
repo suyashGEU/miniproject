@@ -33,13 +33,14 @@ int s_opcode(char opcode[15])
 }
 int s_operand(char operand[15],int symtab_size)
 {
-            return(symtab[i].opcode);
-            break;
+
         int i;
         for(i=0;i<symtab_size;i++)
         {
         if(strcmp(operand,symtab[i].label_name)==0)
         {
+            return(symtab[i].opcode);
+            break;
         }
 
     }
